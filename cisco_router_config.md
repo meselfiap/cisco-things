@@ -49,3 +49,19 @@ $ exit
 $ copy running-config startup-config
 
 ```
+
+
+## Configurando o Switch para conexão com Cisco 1841
+
+```
+$ enable
+$ configure terminal
+$ hostname SW_10
+$ ip default-gateway <ip-do-gateway>
+$ interface vlan 1
+$ ip address <endereço-ip> <mascara-de-rede>
+$ no shutdown
+$ exit
+$ exit
+$ wr
+```
