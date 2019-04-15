@@ -30,3 +30,22 @@ Os comandos estão disponíveis no modo privilegiado e não privilegiado, além 
 - `enable` - Entra no modo de instruções privilegiadas
 - `disable` - Sai do modo de instruções privilegiadas
 - `clock` - configura o relógio do roteador
+- `show <configuração>` - mostra certa configuração
+  - `show history` - mostra o histórico de comando
+  - `show clock` - mostra a configuração de relógio
+- `wr` - salva as configurações de `running-config` em `startup-config`
+
+## Configurando Gateway
+
+```
+# Precisa estar no modo privilegiado
+$ configure terminal
+$ hostname <nome-do-host>
+$ interface fastethernet <bus>/<interface> # 0/0, 0/1
+$ ip address <ip-do-gateway> <mascara>
+$ no shutdown
+$ exit
+$ exit
+$ copy running-config startup-config
+
+```
