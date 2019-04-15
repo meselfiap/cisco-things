@@ -65,3 +65,7 @@ $ exit
 $ exit
 $ wr
 ```
+
+## Modelo do projeto com Switch e Roteador
+
+![Projeto](imagens/projeto-01.png)
